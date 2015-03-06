@@ -59,10 +59,12 @@ int main()
 	cout << "y= ";
 	cin >> p2.y;
 
+	// distanta dintre puncte
 	cout << "Distanta dintre punctele ";
 	afisare(p1.x, p1.y, p2.x, p2.y);
 	cout << " este de " << distance(p1.x, p1.y, p2.x, p2.y) << endl; 
 
+	// punctul de mijloc dintre puncte
 	cout << "Punctul de mijloc dintre punctele ";
 	afisare(p1.x, p1.y, p2.x, p2.y);
 	cout << " este de ";
@@ -101,7 +103,7 @@ int main()
 
 float distance(float x1, float y1, float x2, float y2)
 {
-	return (float)(sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2)));
+	return sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
 }
 
 float distance(float x1, float y1, float z1, float x2, float y2, float z2)
